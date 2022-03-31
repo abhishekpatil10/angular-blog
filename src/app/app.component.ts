@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+// import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  title = 'BLOG-APP';
+  
+  isShowDiv = true;  
+     
+  toggleDisplayDiv() {  
+    this.isShowDiv = !this.isShowDiv;  
+  }    
 }
+
+
+
+
